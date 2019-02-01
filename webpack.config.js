@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   entry: './app/index.js',
@@ -21,8 +22,14 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+    new webpack.ProvidePlugin({
+      React: 'react',
+      ReactDOM: 'react-dom',
+    }),
+  ],
   devServer: {
     port: 9000,
     open: true,
-  }
+  },
 };
