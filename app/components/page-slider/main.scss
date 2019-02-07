@@ -1,0 +1,16 @@
+.full-slider {
+  display: block;
+
+  &__slides {
+    display: block;
+  }
+
+  &__navigation {
+    display: table;
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translate(-50%, 0);
+    border: 1px solid #000;
+  }
+}
