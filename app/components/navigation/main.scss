@@ -1,0 +1,32 @@
+.navigation {
+  display: flex;
+
+  &__item {
+    flex: 1 1 auto;
+    cursor: pointer;
+  }
+}
+
+.navigation {
+  // Align
+  &--orientation-horizontal {
+    flex-direction: row;
+  }
+
+  &--orientation-vertical {
+    flex-direction: column;
+  }
+
+  // Align
+  &--align-items-left {
+    align-items: flex-start;
+  }
+
+  &--align-items-center {
+    align-items: center;
+  }
+
+  &--align-items-right {
+    align-items: flex-end;
+  }
+}

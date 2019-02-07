@@ -1,0 +1,59 @@
+.circle {
+  i {
+    display: block;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 1px 1px 4px rgba(#000, .4);
+    opacity: .4;
+  }
+}
+
+// Events
+.circle {
+  &:not(&--active):hover {
+    i {
+      opacity: .6;
+    }
+  }
+}
+
+// States
+.circle {
+  &--active {
+    i {
+      opacity: 1;
+    }
+  }
+}
+
+// Themes
+.circle {
+  &--size-small {
+    i {
+      height: 12px;
+      width: 12px;
+    }
+  }
+
+  &--size-medium {
+    i {
+      height: 16px;
+      width: 16px;
+    }
+  }
+
+  &--size-large {
+    i {
+      height: 24px;
+      width: 24px;
+    }
+  }
+}
+
+// Transitions
+.circle {
+  i {
+    transition-property: opacity;
+    transition-duration: .3s;
+  }
+}
