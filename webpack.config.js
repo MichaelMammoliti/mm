@@ -41,6 +41,10 @@ module.exports = {
     ]
   },
 
+  resolve: {
+    mainFiles: ['index', 'main'],
+  },
+
   plugins: [
     new webpack.ProvidePlugin({
       React: 'react',
